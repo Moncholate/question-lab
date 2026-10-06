@@ -1944,10 +1944,10 @@ $("bSkip").addEventListener("click", ()=>{ if(!rondas.b.verificado) rondaSuma("b
 /* PWA: registro del service worker (network-first — nunca sirve versión vieja
    con red; ver sw.js). Hace la app instalable; el aviso de instalar queda en
    manos del navegador, sin banner propio. Solo en producción: en file:// o
-   localhost sin la ruta /Question-Lab/ el scope no calza. */
-if ('serviceWorker' in navigator && location.pathname.startsWith('/Question-Lab/')) {
+   localhost sin la ruta /question-lab/ el scope no calza. */
+if ('serviceWorker' in navigator && location.pathname.startsWith('/question-lab/')) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/Question-Lab/sw.js', { scope: '/Question-Lab/' })
+    navigator.serviceWorker.register('/question-lab/sw.js', { scope: '/question-lab/' })
       .catch(err => console.warn('SW registration failed:', err));
   });
 }

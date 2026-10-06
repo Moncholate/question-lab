@@ -8,7 +8,7 @@
    apuntan a una estructura de archivos que ya no existe. */
 const CACHE_VERSION = 'v2';
 const CACHE_NAME = `question-lab-${CACHE_VERSION}`;
-const BASE = '/Question-Lab/';
+const BASE = '/question-lab/';
 
 const urlsToCache = [
   BASE,
